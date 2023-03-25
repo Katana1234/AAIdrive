@@ -202,7 +202,7 @@ class CDSMetrics(val carInfo: CarInformation) {
 		// brakeContact is a bit coded value
 		// bit 1 -> value 1 -> Brake pedal?
 		// bit 2 -> value 2 -> Soft braking
-		// bit 3 -> value 3 -> Medium / Strong braking
+		// bit 3 -> value 4 -> Medium / Strong braking
 		// bit 4 -> value 8 -> Cruise control is braking
 		// bit 5 -> value 16 -> Fullstop (when the vehicle is standing still, only when engine is running)
 

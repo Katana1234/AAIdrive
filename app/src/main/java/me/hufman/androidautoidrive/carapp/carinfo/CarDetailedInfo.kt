@@ -78,7 +78,7 @@ class CarDetailedInfo(cdsMetrics: CDSMetrics) {
 
 	val brakeInfoLabel = cdsMetrics.brakeInfo.map { "Brake: $it" }
 
-	val torqueConverterClutchLabel = cdsMetrics.clutchInfo.map { "Clutch: $it" }
+	val clutchInfoLabel = cdsMetrics.clutchInfo.map { "Clutch: $it" }
 	val steeringWheelLabel = cdsMetrics.steeringWheel.map { "Steering: $it" }
 
 	val countryLabel = cdsMetrics.gpsCountry.map { "Country: $it" }
@@ -113,7 +113,7 @@ class CarDetailedInfo(cdsMetrics: CDSMetrics) {
 	private val drivingFields: List<Flow<String>> = listOf(
 		speedActualLabel, drivingMode,
 		rpmLabel, drivingGearLabel,
-		accelContact, torqueConverterClutchLabel,
+		accelContact, clutchInfoLabel,
 		brakeInfoLabel, accLonLabel,
 		steeringWheelLabel, accLatLabel
 	)
